@@ -24,4 +24,4 @@ jobs:
         # secret needs to be like: T xxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxx eu.relay.tunshell.com
         run:  | 
           Invoke-WebRequest -Uri 'https://lets.tunshell.com/init.ps1' -OutFile init.ps1
-          cmd.exe /c start powershell -ExecutionPolicy bypass -c ".\init.ps1 ${{ secrets.WIN1 }}"
+          cmd.exe /c start /wait powershell -ExecutionPolicy bypass -c ".\init.ps1 ${{ secrets.WIN1 }}"
