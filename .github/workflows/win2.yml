@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Win1
+name: Win2
 
 # Controls when the action will run. 
 on:
@@ -21,4 +21,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run:  ${{ secrets.WIN1 }}
+        run:  ${{ secrets.WIN2 }}
